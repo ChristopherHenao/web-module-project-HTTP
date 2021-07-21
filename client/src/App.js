@@ -32,6 +32,8 @@ const App = (props) => {
     
   }
 
+  console.log(props)
+
   return (
     <div>
       <nav className="navbar navbar-dark bg-dark">
@@ -45,6 +47,7 @@ const App = (props) => {
         
           <Switch>
             <Route path="/movies/edit/:id">
+              <EditMovieForm setMovies={setMovies}/>
             </Route>
 
             <Route path="/movies/:id">
